@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Путеводитель Москва!"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/secondName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="244dp"
+        android:text="Фамилия:"
+        android:textSize="20sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Имя:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/secondName"
+        app:layout_constraintTop_toBottomOf="@+id/secondName" />
+
+    <Button
+        android:id="@+id/nextActivity"
+        android:layout_width="163dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="76dp"
+        android:text="Далее"
+        app:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
+        app:cornerRadius="70px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/surnameInput"
+        android:layout_width="224dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="232dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="e.g Смирнов"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/surnameDisc"
+        android:text="Surname"
+        android:labelFor="@id/surnameInput"
+        tools:ignore="InvalidId,MissingConstraints"  android:layout_height="0dp" android:layout_width="0dp"/>
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="224dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="e.g Иван"
+        app:layout_constraintStart_toStartOf="@+id/surnameInput"
+        app:layout_constraintTop_toBottomOf="@+id/surnameInput" />
+
+    <TextView
+        android:id="@+id/nameDisc"
+        android:text="Name"
+        android:labelFor="@id/nameInput"
+        tools:ignore="InvalidId,MissingConstraints"  android:layout_height="0dp" android:layout_width="0dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
